@@ -57,7 +57,7 @@
   letter-spacing: -0.6px;
 }
 
-.header__span {
+.header__span-accent {
   display: block;
   font-family: "Noto Serif", "Times New Roman", sans-serif;
   font-style: italic;
@@ -67,7 +67,7 @@
   z-index: 1;
 }
 
-.header__descripiton {
+.header__description {
   max-width: 683px;
   margin: 0;
   font-family: "Noto Serif", "Times New Roman", sans-serif;
