@@ -13,4 +13,6 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 ## Plan on improving the project
 
-Add your ideas here :)
+- a gallary/carousel of images form the coffee shop might be useful to include
+- Under the 'about' section, it might be useful to include a contact form so people can contact the coffee shop
+- It might be good to have an online shoping page
