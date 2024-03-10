@@ -73,8 +73,8 @@
             Check out some recipes we've collected for your home-brewing
             convenience:
           </p>
-          <div class="recipes__videos">
-            <div>
+          <ul class="recipes__videos">
+            <li class="reciepes__videos-item">
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=XiX6yYPRiG2Dmx11"
@@ -85,8 +85,8 @@
               <p class="recipes__video-caption">
                 <span>Areopress recipe</span> ~5 min
               </p>
-            </div>
-            <div>
+            </li>
+            <li>
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=IlpO5LKVMKTTibiJ"
@@ -97,8 +97,8 @@
               <p class="recipes__video-caption">
                 <span>French press recipe</span> ~15 min
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
@@ -111,6 +111,7 @@
                 id="name"
                 name="name"
                 placeholder="Name Surname"
+                required
               />
               <label for="number" class="form__label">Number of guests *</label>
               <input
@@ -119,6 +120,7 @@
                 id="number"
                 name="number"
                 placeholder="1-8"
+                required
               />
               <label for="date" class="form__label">Date & time *</label>
               <input
@@ -126,6 +128,7 @@
                 type="datetime-local"
                 id="date"
                 name="date"
+                required
               />
               <label for="email" class="form__label">Your email *</label>
               <input
@@ -134,17 +137,23 @@
                 id="email"
                 name="email"
                 placeholder="email@email.com"
+                required
               />
             </fieldset>
             <fieldset class="form__fieldset">
-              <button class="form__button">Book a table</button>
+              <button class="form__button" type="submit">Book a table</button>
             </fieldset>
             <fieldset class="form__fieldset">
               <label
                 for="checkbox"
                 class="form__label form__label_type_checkbox"
               >
-                <input class="form__checkbox" type="checkbox" id="checkbox" />
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  id="checkbox"
+                  required
+                />
                 I agree with terms of use</label
               >
             </fieldset>
@@ -249,25 +258,27 @@
             src="./images/logo_coffeeshop_light.svg"
             alt="footer logo"
           />
-          <ul class="footer__list">
+          <div>
             <h3 class="footer__social-heading">Social media</h3>
-            <li class="footer__list-item">
-              <img
-                class="footer__social-icon"
-                src="./images/facebook_white.svg"
-                alt="facebook logo"
-              />
-              <a href="#" class="footer__social-link">Facebook</a>
-            </li>
-            <li class="footer__list-item">
-              <img
-                class="footer__social-icon"
-                src="./images/instagram_white.svg"
-                alt="instagram logo"
-              />
-              <a href="#" class="footer__social-link">Instagram</a>
-            </li>
-          </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  class="footer__social-icon"
+                  src="./images/facebook_white.svg"
+                  alt="facebook logo"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  class="footer__social-icon"
+                  src="./images/instagram_white.svg"
+                  alt="instagram logo"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <p class="footer__copyright">&copy; 2024 Henok Tilahun</p>
       </footer>
